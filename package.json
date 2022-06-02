@@ -1,0 +1,30 @@
+{
+  "name": "rexar-tools",
+  "version": "2.0.0",
+  "description": "Some Useful Functions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davutozgursukuti4531/rexar-tools.git"
+  },
+  "keywords": [
+    "tools",
+    "utils",
+    "rexar-tools",
+    "basic",
+    "useful",
+    "functions",
+    "useful-functions",
+    "useful-methods",
+    "useful-module"
+  ],
+  "author": "Davut Özgür Süküti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davutozgursukuti4531/rexar-tools/issues"
+  },
+  "homepage": "https://github.com/davutozgursukuti4531/rexar-tools#readme"
+}
