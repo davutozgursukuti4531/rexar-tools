@@ -1,6 +1,6 @@
 {
   "name": "rexar-tools",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Some Useful Functions.",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/davutozgursukuti4531/rexar-tools/issues"
   },
-  "homepage": "https://github.com/davutozgursukuti4531/rexar-tools#readme"
+  "homepage": "https://github.com/davutozgursukuti4531/rexar-tools#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
