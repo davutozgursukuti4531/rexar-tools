@@ -96,7 +96,7 @@ class RexarTools{
     /**
      * 
      * @param {string} pkgName 
-     * @returns {Promise<import("./typings/Types").NPMReturns>}
+     * @returns {import("./typings/Types").NPMReturns}
      */
     async npm(pkgName){
         const resp = await axios.request({
@@ -133,6 +133,43 @@ class RexarTools{
      */
     bigingify(val){
         return this.isBigInt(val) ? val : BigInt(val)
+    }
+    /**
+     * @returns {string}
+     */
+    getDayWithText(){
+        var days = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ]
+
+        return days[new Date().getDay()]
+    }
+    /**
+     * @returns {string}
+     */
+     getMonthWithText(){
+        var months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ]
+
+        return months[new Date().getMonth()]
     }
 }
 
