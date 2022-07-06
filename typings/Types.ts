@@ -1,4 +1,4 @@
-interface NPMReturns {
+type NPMReturns = Promise<{
     name: string
     version: string
     description: string
@@ -15,7 +15,7 @@ interface NPMReturns {
     }
     author: string
     license: string
-}
+}>
 
 
 export { NPMReturns }
