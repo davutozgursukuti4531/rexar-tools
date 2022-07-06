@@ -7,12 +7,9 @@ Some Useful Functions.
 #### or:
 `yarn add rexar-tools`
 
-# news:
-- added npm method.
-- added numberify method.
-- added isNumber method.
-- added isBigInt method.
-- added bigintify method.
+# 2.2.0 news:
+- added getDayWithText method.
+- added getMonthWithText method.
 
 
 # Functions
@@ -26,6 +23,7 @@ RTools.stringify(123)//Returns "123"
 RTools.dateify("2022-06-02")// Returns 2022-06-02T00:00:00.000Z
 RTools.regexify(" ")//Returns / /
 RTools.booleanify(1)//Returns true
+RTools.bigintify(123)//Returns 123n
 
 RTools.isNumber("123")//Returns false
 RTools.isNumber(RTools.numberify("123"))//Returns true
@@ -37,7 +35,13 @@ RTools.isRegex(1221)//Returns false
 RTools.isRegex(RTools.regexify(" "))//Returns true
 RTools.isBoolean(5412)//Returns false
 RTools.isBoolean(RTools.booleanify(1))//Returns true
+RTools.isBigInt(512)//Returns false
+RTools.isBigInt(RTools.bigintify(1))//Returns true
 
+
+//Date Methods
+RTools.getDayWithText()//Returns What Today Is From Days
+RTools.getMonthWithText()//Returns What ToMonth Is From Months
 
 //Time Methods
 await RTools.wait(1000)//If Used Inside a Function, Makes the Function Wait for Specified Time.
