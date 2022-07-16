@@ -14,3 +14,10 @@ Released Package
 
 - added getDayWithText method.
 - added getMonthWithText method.
+
+# v2.3.0
+
+- added getWeek method.
+- added getUTCWeek method.
+- added isObject method.
+- added arrayify method.
