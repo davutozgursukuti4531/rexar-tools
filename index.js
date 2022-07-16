@@ -171,6 +171,18 @@ class RexarTools{
 
         return months[new Date().getMonth()]
     }
+    arrayify(val){
+        return !Array.isArray(val) ? [val] : val
+    }
+    isObject(val){
+        return typeof val === "object"
+    }
+    getWeek(){
+        return parseInt(new Date().getMonth() / 4)
+    }
+    getUTCWeek(){
+        return parseInt(new Date().getUTCMonth() / 4)
+    }
 }
 
 
