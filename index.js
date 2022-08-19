@@ -190,7 +190,7 @@ class RexarTools{
     /**
      * 
      * @param {string} pkgName 
-     * @returns {import("./typings/Types").NPMReturns}
+     * @returns {import("./typings/Types").YarnReturns}
      */
     async yarn(pkgName){
         const resp = await axios.request({
