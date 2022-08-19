@@ -21,3 +21,7 @@ Released Package
 - added getUTCWeek method.
 - added isObject method.
 - added arrayify method.
+
+# v2.4.0
+
+- added yarn method.
