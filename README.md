@@ -7,11 +7,8 @@ Some Useful Functions.
 #### or:
 `yarn add rexar-tools`
 
-# 2.3.0 news:
-- added getWeek method.
-- added getUTCWeek method.
-- added isObject method.
-- added arrayify method.
+# 2.4.0 news:
+- added yarn method.
 
 
 # Functions
@@ -62,4 +59,7 @@ RTools.wait(1000).then(v => v)//If Used Inside a Function, Makes the Function Wa
 await RTools.npm("rexar-tools")//Assigns the data of the specified NPM package.
 //or
 RTools.npm("rexar-tools").then(v => v)//Assigns the data of the specified NPM package.
+await RTools.yarn("rexar-tools")//Assigns the data of the specified Yarn package.
+//or
+RTools.yarn("rexar-tools").then(v => v)//Assigns the data of the specified Yarn package.
 ```
