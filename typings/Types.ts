@@ -16,6 +16,24 @@ type NPMReturns = Promise<{
     author: string
     license: string
 }>
+type YarnReturns = Promise<{
+    name: string
+    version: string
+    description: string
+    keywords: Array<string>
+    createdDate: string
+    modifiedDate: string
+    repository: {
+        url: string
+        type: string
+        directory: string
+    }
+    bugs: {
+        url: string
+    }
+    author: string
+    license: string
+}>
 
 
-export { NPMReturns }
+export { NPMReturns, YarnReturns }
