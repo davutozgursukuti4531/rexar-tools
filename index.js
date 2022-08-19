@@ -171,6 +171,10 @@ class RexarTools{
 
         return months[new Date().getMonth()]
     }
+    /**
+     * @param {any} val
+     * @returns {any[]} 
+     */
     arrayify(val){
         return !Array.isArray(val) ? [val] : val
     }
@@ -182,6 +186,31 @@ class RexarTools{
     }
     getUTCWeek(){
         return parseInt(new Date().getUTCMonth() / 4)
+    }
+    /**
+     * 
+     * @param {string} pkgName 
+     * @returns {import("./typings/Types").NPMReturns}
+     */
+    async yarn(pkgName){
+        const resp = await axios.request({
+            url: "https://registry.yarnpkg.com/" + pkgName
+        })
+        const data = resp.data
+        const v = data["dist-tags"].latest
+        return {
+            name: data.name,
+            version: v,
+            description: data.versions[v].description,
+            keywords: data.versions[v].keywords,
+            createdDate: data.time.created,
+            modifiedDate: data.time.modified,
+            repository: data.versions[v].repository,
+            bugs: data.versions[v].bugs,
+            homepage: data.versions[v].homepage,
+            author: data.versions[v].author.name,
+            license: data.versions[v].license
+        }
     }
 }
 
