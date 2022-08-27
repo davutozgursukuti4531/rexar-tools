@@ -3,19 +3,30 @@
 Some Useful Functions.
 
 # How to Install
+### npm:
 `npm i rexar-tools`
-#### or:
+### yarn:
 `yarn add rexar-tools`
 
-# 2.4.0 news:
-- added yarn method.
+# 2.5.0 news:
+- added TypeScript support.
 
 
 # Functions
+### Importing Module
+CommonJS:
 ```js
 const RTools = require("rexar-tools")
-
-
+```
+ESModule:
+```mjs
+import RTools from "rexar-tools"
+```
+TypeScript:
+```ts
+import RTools from "rexar-tools"
+```
+```js
 //Type Methods
 RTools.numberify("123")//Returns 123
 RTools.stringify(123)//Returns "123"
