@@ -96,7 +96,7 @@ class RexarTools{
     /**
      * 
      * @param {string} pkgName 
-     * @returns {import("./typings/Types").NPMReturns}
+     * @returns {Promise<import("./typings/Types").NPMReturns>}
      */
     async npm(pkgName){
         const resp = await axios.request({
@@ -182,15 +182,15 @@ class RexarTools{
         return typeof val === "object"
     }
     getWeek(){
-        return parseInt(new Date().getMonth() / 4)
+        return new Date().getMonth() / 4
     }
     getUTCWeek(){
-        return parseInt(new Date().getUTCMonth() / 4)
+        return new Date().getUTCMonth() / 4
     }
     /**
      * 
      * @param {string} pkgName 
-     * @returns {import("./typings/Types").YarnReturns}
+     * @returns {Promise<import("./typings/Types").YarnReturns>}
      */
     async yarn(pkgName){
         const resp = await axios.request({
