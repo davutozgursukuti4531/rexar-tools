@@ -1,4 +1,4 @@
-type NPMReturns = Promise<{
+type NPMReturns = {
     name: string
     version: string
     description: string
@@ -14,9 +14,10 @@ type NPMReturns = Promise<{
         url: string
     }
     author: string
+    homepage: string
     license: string
-}>
-type YarnReturns = Promise<{
+}
+type YarnReturns = {
     name: string
     version: string
     description: string
@@ -24,16 +25,17 @@ type YarnReturns = Promise<{
     createdDate: string
     modifiedDate: string
     repository: {
-        url: string
-        type: string
-        directory: string
+        url: string | undefined
+        type: string | undefined
+        directory: string | undefined
     }
     bugs: {
-        url: string
+        url: string | undefined
     }
-    author: string
+    homepage: string
+    author: string | undefined
     license: string
-}>
+}
 
 
 export { NPMReturns, YarnReturns }
