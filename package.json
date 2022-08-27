@@ -1,8 +1,9 @@
 {
   "name": "rexar-tools",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Some Useful Functions.",
   "main": "index.js",
+  "typings": "./typings/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +20,8 @@
     "functions",
     "useful-functions",
     "useful-methods",
-    "useful-module"
+    "useful-module",
+    "useful-properties"
   ],
   "author": "Davut Özgür Süküti",
   "license": "MIT",
