@@ -25,3 +25,7 @@ Released Package
 # v2.4.0
 
 - added yarn method.
+
+# v2.5.0
+
+- added TypeScript support.
