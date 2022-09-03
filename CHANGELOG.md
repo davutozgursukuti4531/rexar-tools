@@ -26,6 +26,10 @@ Released Package
 
 - added yarn method.
 
-# v2.5.0
+# v2.6.0
 
 - added TypeScript support.
+
+# v.2.7.0
+
+- now you need to add .default when importing the module if you are using commonjs. example: const RexarTools = require("rexar-tools").default
