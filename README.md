@@ -1,5 +1,8 @@
 # Rexar-Tools
 
+![Image](https://img.shields.io/npm/dt/rexar-tools.svg?color=%2351FC0&maxAge=3600)
+![Image](https://img.shields.io/npm/v/rexar-tools?color=red&label=rexar-tools)
+
 Some Useful Functions.
 
 # How to Install
@@ -8,19 +11,22 @@ Some Useful Functions.
 ### yarn:
 `yarn add rexar-tools`
 
-# 2.5.0 news:
-- added TypeScript support.
+# 2.7.0 news:
+- now you need to add .default when importing the module if you are using commonjs. example: const RexarTools = require("rexar-tools").default
+
 
 
 # Functions
 ### Importing Module
 CommonJS:
 ```js
-const RTools = require("rexar-tools")
+const RTools = require("rexar-tools").default
 ```
 ESModule:
 ```mjs
 import RTools from "rexar-tools"
+//or
+const RTools = await import("rexar-tools/esm/index.mjs").then(m => m.default)
 ```
 TypeScript:
 ```ts
