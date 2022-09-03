@@ -216,4 +216,4 @@ class RexarTools{
 
 
 
-module.exports = new RexarTools()
+module.exports.default = new RexarTools()
