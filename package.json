@@ -1,11 +1,16 @@
 {
   "name": "rexar-tools",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "description": "Some Useful Functions.",
   "main": "index.js",
   "typings": "./typings/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    "import": "./esm/index.mjs",
+    "require": "./index.js",
+    "types": "./typings/index.d.ts"
   },
   "repository": {
     "type": "git",
